@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Passenger Counter</title>
+</head>
+<body>
+    <!-- THIS PROJECT IS TO TEST MY VERY BASIC KNOWLEDGE OF JavaScript - Scrimba Bootcamp -->
+    <main>
+        <section class="main">
+            <div class="container">
+                <h1>People Entered <span>Counter</span></h1>
+                <p>This tool will <span>count</span> the people who enters the room and store the value.</p>
+                <p>Click the button below to get started.</p>
+                <h2 id="count-tracker">0</h2>
+                <div class="btn">
+                    <button id="increment" class="primary" onclick="increment()">Increment</button>
+                    <button id="decrement" class="primary" onclick="decrement()">Decrement</button>
+                </div>
+                <button id="save" class ="secondary" onclick="save()">Save</button>
+                <p id="save-el">Saved History: </p>
+                <footer><p>Made by <span>Ariel Batoon</span></p></footer>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    border: 1px solid #E2E8F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 50rem;
+    height: 50rem;
+}
+.container  h1{
+    text-align: center;
+    color: #1A202C;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.container h1 > span{
+    color: #48BB78;
+}
+.container p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4A5568;
+    margin: 0 10px 1rem 10px;
+}
+.container p > span{
+    font-weight: bold;
+}
+.container #save-el{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+}
+.container #count-tracker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #38A169;
+    width: 50%;
+    height: 8%;
+    color: white;
+    font-weight: medium;
+    border-radius: 10px;
+    margin: 2rem 0 1.5rem 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.container .btn > .primary{
+    background: #38A169;
+    padding: 15px 30px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container .secondary{
+    background: transparent;
+    padding: 13px 50px;
+    color: #1A202C;
+    outline: none;
+    border: 2px solid #38A169;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.container footer > p{
+    color: #718096;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+}
+.container footer > p > span{
+    color: #48BB78;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 320px) {
+    .container{
+        width: 18rem;
+        height: 30rem;
+    }
+    .container  h1{
+        font-size: 1.5rem;
+    }
+    .container p{
+        margin: 10px 10px;
+        font-size: 1rem;
+    }
+    .container .btn > .primary{
+        padding: 15px 30px;
+        border-radius: 50px;
+    }
+    .container .secondary{
+        padding: 13px 40px;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 600px){
+    .container{
+        width: 25rem;
+        height: 30rem;
+    }
+    .container  h1{
+        font-size: 1.5rem;
+    }
+    .container p{
+        font-size: 1rem;
+    }
+    .container .btn > .primary{
+        padding: 15px 30px;
+        border-radius: 50px;
+    }
+    .container .secondary{
+        padding: 13px 40px;
+    }
+}
