@@ -1,23 +1,27 @@
 let count = 0;
+let change = document.getElementById('count-tracker');
+let saveEl = document.getElementById('save-el');
 
 
 const increment = () => {
     count = count + 1;
-
-    let change = document.getElementById('count-tracker').innerHTML = count;
+    
+    change.innerHTML = count;
     return change;
 };
 
 const decrement = () => {
     count = count - 1;
+    change.innerHTML = count;
 
-    let change = document.getElementById('count-tracker').innerHTML = count;
     return change;
 };
 
 const save = () =>{
     let toString = "( "+count+" )"+" ";
-    let saveEl = document.getElementById('save-el').innerHTML += toString;
+    saveEl.innerHTML += toString;
 
+    change.innerHTML = 0;
+    count = 0;
     return saveEl;
 }
